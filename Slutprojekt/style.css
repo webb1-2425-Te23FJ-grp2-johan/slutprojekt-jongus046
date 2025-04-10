@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: violet;
+}
+
+ .header{
+    background-color: yellow;
+    padding: 10px;
+    
+ }
+
+@media screen and (min-width:600px){
+    .img{
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+ /* .gripen{
+    transition: 0.5s;
+    
+   
+}
+.gripen:hover{
+    padding: 0px 0px 50px 0px;
+    transition: 0.5s;
+} */
+/* .draken{
+    transition: 0.5s;
+}
+.draken:hover{
+    padding: 0px 0px 50px 0px;
+    transition: 0.5s;
+}
+
+.lansen{
+    transition: 0.5s;
+}
+.lansen:hover{
+    padding: 0px 0px 50px 0px;
+    transition: 0.5s;
+}
+
+.tunnan{
+    transition: 0.5s;
+}
+.tunnan:hover{
+    padding: 0px 0px 50px 0px;
+    transition: 0.5s;
+}
+
+.viggen{
+    transition: 0.5s;
+}
+.viggen:hover{
+    padding: 0px 0px 50px 0px;
+    transition: 0.5s; */
+
+.image img{
+    transition: 0.5s;   
+}
+.image img:hover{
+    padding: 0px 0px 50px 0px;
+    transition: 0.5s;
+}
+
+
+
