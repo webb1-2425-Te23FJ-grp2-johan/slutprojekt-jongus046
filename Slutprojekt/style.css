@@ -5,7 +5,7 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: violet;
+    background-color: indianred;
 }
 
  .header{
@@ -20,52 +20,15 @@ body{
         max-height: 20px;
     }
 }
- /* .gripen{
-    transition: 0.5s;
-    
-   
-}
-.gripen:hover{
-    padding: 0px 0px 50px 0px;
-    transition: 0.5s;
-} */
-/* .draken{
-    transition: 0.5s;
-}
-.draken:hover{
-    padding: 0px 0px 50px 0px;
-    transition: 0.5s;
-}
-
-.lansen{
-    transition: 0.5s;
-}
-.lansen:hover{
-    padding: 0px 0px 50px 0px;
-    transition: 0.5s;
-}
-
-.tunnan{
-    transition: 0.5s;
-}
-.tunnan:hover{
-    padding: 0px 0px 50px 0px;
-    transition: 0.5s;
-}
-
-.viggen{
-    transition: 0.5s;
-}
-.viggen:hover{
-    padding: 0px 0px 50px 0px;
-    transition: 0.5s; */
-
 .image img{
-    transition: 0.5s;   
+    transition: 1s;   
 }
 .image img:hover{
-    padding: 0px 0px 50px 0px;
-    transition: 0.5s;
+    background-color:blueviolet;
+    padding: 0px 0px 200px 0px;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
 }
 
 
