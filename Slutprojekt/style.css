@@ -1,35 +1,55 @@
-*{
-    box-sizing: border-box;
-
+* {
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    background-color: indianred;
-}
-
- .header{
-    background-color: yellow;
-    padding: 10px;
-    
- }
-
-@media screen and (min-width:600px){
-    .img{
-        max-width: 20px;
-        max-height: 20px;
-    }
-}
-.image img{
-    transition: 1s;   
-}
-.image img:hover{
-    background-color:blueviolet;
-    padding: 0px 0px 200px 0px;
-    transition: 1s;
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
+  background-color: indianred;
 }
 
+.header {
+  background-color: yellow;
+  padding: 10px;
+}
 
-
+@media screen and (min-width: 600px) {
+  .img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+.image img {
+  transition: 1s;
+}
+.image img:hover {
+  background-color: blueviolet;
+  padding: 0px 0px 200px 0px;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+}
+.gripen {
+  grid-area: grip;
+}
+.draken {
+  grid-area: drak;
+}
+.lansen {
+  grid-area: lan;
+}
+.tunnan {
+  grid-area: tun;
+}
+.viggen {
+  grid-area: vig;
+  width: 100%;
+}
+.planes {
+    /* grid-auto-rows: 270px; */
+    width: max-content;
+  display: grid;
+  grid-template-areas:
+    " grip drak"
+    " lan tun"
+    "vig vig";
+}
