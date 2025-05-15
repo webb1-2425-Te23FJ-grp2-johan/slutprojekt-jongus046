@@ -25,6 +25,7 @@ body {
   }
   .gripen {
     background-image: url(img/gripen400x300.webp);
+    background-size: cover;
   }
   .draken {
     background-image: url(img/draken400x300.webp);
@@ -59,7 +60,7 @@ body {
 
 .gripen {
   grid-area: grip;
-  height: 300px;
+  /* height: 300px; */
   /* padding: 1px 10px;
   margin: 10px ; */
 }
