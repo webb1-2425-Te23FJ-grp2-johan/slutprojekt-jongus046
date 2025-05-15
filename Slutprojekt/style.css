@@ -1,34 +1,29 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 body {
-  display: flex;
-  justify-content: center;
   background-color: rgb(255, 0, 0);
+ /* max-width: 1200px; */
+
 }
 
 .header {
   background-color: rgb(0, 255, 21);
-  padding: 10px;
+  /* padding: 10px; */
+      /* display: flex;
+    justify-content: center; */
+ 
 }
 .planes {
-  grid-template-areas:
-    " for "
-    " grip "
-    "drak"
-    " lan"
-    " tun"
-    "vig"
-    " vig";
+  display: grid;
 }
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 0px) {
+
+
   .fortmation {
     background-image: url(img/SvenskaStridsflygplan400x300.webp);
   }
   .gripen {
-       display: block;
-       width: 400px;                  
-  height: 300px; 
     background-image: url(img/gripen400x300.webp);
   }
   .draken {
@@ -53,49 +48,138 @@ body {
       "vig"
       " vig";
   }
+  .fortmation {
+  grid-area: for;
+
+  height: 300px;
+  max-width: 400px;
+  /* padding: 1px 10px;
+  margin: 10px; */
 }
-@media  (min-width:401px) and (max-width: 600px) {
-  .fortmation{
+
+.gripen {
+  grid-area: grip;
+  height: 300px;
+  /* padding: 1px 10px;
+  margin: 10px ; */
+}
+.draken {
+  grid-area: drak;
+  height: 300px;
+  /* padding: 1px 10px;
+  margin: 10px; */
+}
+.lansen {
+  grid-area: lan;
+  height: 300px;
+  /* padding: 5px 0px; */
+  /* margin: 10px;  */
+}
+.tunnan {
+  grid-area: tun;
+  height: 300px;
+  /* padding: 1px 10px;
+  margin: 10px; */
+}
+.viggen {
+  grid-area: vig;
+  height: 300px;
+}
+@media screen and (min-width: 600px) {
+  .fortmation {
     background-image: url(img/SvenskaStridsflygplan600x400.webp);
   }
-  .gripen{
-      display: block;
-       width: 600px;                  
-  height: 400px; 
+  .gripen {
     background-image: url(img/gripen600x400.webp);
-      background-size: cover;       
-  background-position: center;  
-  text-decoration: none;  
   }
-  .draken{
+  .draken {
     background-image: url(img/draken600x400.webp);
   }
-  .lansen{
+  .lansen {
     background-image: url(img/lansen600x400.webp);
   }
-  .tunnan{
+  .tunnan {
     background-image: url(img/tunnan600x400.webp);
   }
-  .viggen{
+  .viggen {
     background-image: url(img/viggen600x400.webp);
   }
   .planes {
     grid-template-areas:
-    /* "for"
-    "grip"
-    "drak"
-    "lan"
-    "tun"
-    "vig" */
+        " for "
+        " grip "
+        "drak"
+        " lan"
+        " tun"
+        "vig "
+        ;
+    }
+    .fortmation {
+  grid-area: for;
+
+  height: 400px;
+  /* padding: 1px 10px;
+  margin: 10px; */
+}
+
+.gripen {
+  grid-area: grip;
+  height: 400px;
+  /* padding: 1px 10px;
+  margin: 10px ; */
+}
+.draken {
+  grid-area: drak;
+  height: 400px;
+  /* padding: 1px 10px;
+  margin: 10px; */
+}
+.lansen {
+  grid-area: lan;
+  height: 400px;
+  /* padding: 5px 0px; */
+  /* margin: 10px;  */
+}
+.tunnan {
+  grid-area: tun;
+  height: 400px;
+  /* padding: 1px 10px;
+  margin: 10px; */
+}
+.viggen {
+  grid-area: vig;
+  height: 400px;
+  }
+
+@media screen and (min-width: 900px) {
+  .planes {
+    .fortmation {
+      background-image: url();
+    }
+    .gripen {
+      background-image: url();
+    }
+    .draken {
+      background-image: url();
+    }
+    .lansen {
+      background-image: url();
+    }
+    .tunnan {
+      background-image: url();
+    }
+    .viggen {
+      background-image: url();
+    }
+    .planes{
+    grid-template-areas:
       " for for"
       " grip drak"
       " lan tun"
-      "vig vig";
-
+      "vig vig"
+      ;
   }
 }
-@media screen and (min-width: 800px) {
-
 }
 /* }
 .image img {
@@ -113,42 +197,40 @@ max-width: 100%;
 .fortmation {
   grid-area: for;
 
-  height: 300px;
-  padding: 1px 10px;
-  margin: 10px;
+  height: 400px;
+  /* padding: 1px 10px;
+  margin: 10px; */
 }
 
 .gripen {
   grid-area: grip;
-  height: 300px;
-  padding: 1px 10px;
-  margin: 10px 0px;
-
-
+  height: 400px;
+  /* padding: 1px 10px;
+  margin: 10px ; */
 }
 .draken {
   grid-area: drak;
   height: 300px;
-  padding: 1px 10px;
-  margin: 10px;
+  /* padding: 1px 10px;
+  margin: 10px; */
 }
 .lansen {
   grid-area: lan;
   height: 300px;
-  padding: 1px 10px;
-  margin: 10px;
+  /* padding: 5px 0px; */
+  /* margin: 10px;  */
 }
 .tunnan {
   grid-area: tun;
   height: 300px;
-  padding: 1px 10px;
-  margin: 10px;
+  /* padding: 1px 10px;
+  margin: 10px; */
 }
 .viggen {
   grid-area: vig;
   height: 300px;
-  padding: 1px 10px;
-  margin: 10px;
+  /* padding: 1px 10px;
+  margin: 10px; */
 }
 /* .planes {
   display: flex;
@@ -159,7 +241,7 @@ max-width: 100%;
   display: grid;
     padding: 150px;
 } */
-  /* .fortmation{
+/* .fortmation{
     background-image: url();
   }
   .gripen{
