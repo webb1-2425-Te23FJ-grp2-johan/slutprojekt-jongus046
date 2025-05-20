@@ -28,6 +28,7 @@ min-height: 400px;
   background-position: center;
   /* margin: 10px; */
   border: solid;
+  border-color: black;
   border-radius: 10px;
 }
 @media screen and (min-width: 0px) {
@@ -73,6 +74,8 @@ min-height: 400px;
   }
   .gripen {
     background-image: url(img/gripen600x400.webp);
+    display: block;
+
   }
   .draken {
     background-image: url(img/draken600x400.webp);
