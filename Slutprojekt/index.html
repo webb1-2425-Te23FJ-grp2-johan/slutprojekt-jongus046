@@ -7,59 +7,167 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="container">
       <div class="top">
         <a href="index.html"><img src="img/logo-liten.webp" alt="logo" /></a>
-
-        <a href="#us"><p>About us</p></a>
-        <p>Kontakt</p>
+         <div>
+          <a href="time.html"><h1>Flygvapnet genom tiderna</h1></a>
+        </div>
+        <p>About us</p>
+        <a href="#contact"> <p>Kontakt</p></a>
+        
       </div>
+     
       <div class="image">
         <div class="planes">
-          <div class="fortmation">
-            <h1>Flygvapnet genom tiderna</h1>
-            <!-- <img src="img/SvenskaStridsflygplan400x300.webp" alt="plane" /> -->
-          </div>
-          <a href="gripen.html"
-            ><div class="gripen">
-              <!-- <a href="gripen.html" class="gripen"></a> -->
-              <!-- <a href="gripen.html"> <img src="img/gripen400x300.webp" alt="lankgripen" /></a> -->
-            </div></a
+          <div class="fortmation"></div>
+
+          <a href="#" data-micromodal-trigger="gripen-info">
+            <div class="gripen"></div>
+          </a>
+
+          <div
+            class="modal micromodal-slide"
+            id="gripen-info"
+            aria-hidden="true"
           >
-          <div class="draken">
-            <!-- <img src="img/draken400x300.webp" alt="draken" /> -->
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+              <div
+                class="modal__container"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="gripen-info-title"
+              >
+                <header class="modal__header">
+                  <h2 class="modal__title" id="gripen-info-title">
+                    Saab JAS 39 Gripen
+                  </h2>
+                  <button
+                    class="modal__close"
+                    aria-label="Stäng modal"
+                    data-micromodal-close
+                  ></button>
+                </header>
+                <div class="modal__content" id="gripen-info-content">
+                  <p>
+                    JAS 39 Gripen JAS 39 Gripen är Sveriges nuvarande
+                    stridsflygplan och utvecklades av Saab för att ersätta
+                    tidigare modeller som Viggen och Draken. Det är ett
+                    multirole-flygplan, vilket betyder att det kan användas både
+                    för jakt, attack och spaning – därav namnet JAS. Gripen är
+                    känt för sin smidighet, avancerade teknik och låga
+                    driftkostnader. Det används inte bara av Sverige utan har
+                    även exporterats till flera andra länder, som Tjeckien,
+                    Ungern, Brasilien och Sydafrika.
+                  </p>
+                  <img src="img/gripen400x300.webp" alt="gripen-modal" />
+                </div>
+                <footer class="modal__footer">
+                  <button
+                    class="modal__btn"
+                    data-micromodal-close
+                    aria-label="Stäng denna modal"
+                  >
+                    Stäng
+                  </button>
+                </footer>
+              </div>
+            </div>
           </div>
-          <div class="lansen">
-            <!-- <img src="img/lansen400x300.webp" alt="lansen" /> -->
+
+          <a href="#" data-micromodal-trigger="draken-info">
+            <div class="draken"></div>
+          </a>
+
+          <div
+            class="modal micromodal-slide"
+            id="draken-info"
+            aria-hidden="true"
+          >
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+              <div
+                class="modal__container"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="draken-info-title"
+              >
+                <header class="modal__header">
+                  <h2 class="modal__title" id="draken-info-title">
+                    Saab 35 Draken
+                  </h2>
+                  <button
+                    class="modal__close"
+                    aria-label="Stäng modal"
+                    data-micromodal-close
+                  ></button>
+                </header>
+                <div class="modal__content" id="draken-info-content">
+                  <p>
+                    Saab 35 Draken Saab 35 Draken var ett av världens mest
+                    avancerade jaktflygplan när det introducerades på
+                    1950-talet. Det unika dubbeldelta-vingformatet gav det både
+                    höga hastigheter och god manövrerbarhet. Draken kunde flyga
+                    i över dubbla ljudhastigheten och användes i över 40 år av
+                    det svenska flygvapnet. Det exporterades även till länder
+                    som Finland, Danmark och Österrike. Planet var en viktig del
+                    av Sveriges kalla krig-försvar.
+                  </p>
+                  <img src="img/draken400x300.webp" alt="draken-modal" />
+                </div>
+                <footer class="modal__footer">
+                  <button
+                    class="modal__btn"
+                    data-micromodal-close
+                    aria-label="Stäng denna modal"
+                  >
+                    Stäng
+                  </button>
+                </footer>
+              </div>
+            </div>
           </div>
-          <div class="tunnan">
-            <!-- <img src="img/tunnan2-400x300.webp" alt="tunnan" /> -->
-          </div>
-          <div class="viggen">
-            <!-- <img src="img/viggen400x300.webp" alt="viggen" /> -->
-          </div>
+
+          <div class="lansen"></div>
+          <div class="tunnan"></div>
+          <div class="viggen"></div>
         </div>
       </div>
       <div>
-        <p id="us"></p>
+        <p id="contact"></p>
       </div>
-      <form action="">
-        <h2>Hej</h2>
-        <input type="text" placeholder="hej" />
-        <input type="text" placeholder="hej" />
-        <input type="text" placeholder="hej" />
-        <input type="submit">
-       
+      <form action="iv">
+        <h2>Kontacta oss</h2>
+        <input type="text" placeholder="Ditt namn" />
+        <input type="text" placeholder="Kontakt uppgifter" />
+        <input type="text" placeholder="Vad det angår?" />
+        <input type="submit" />
       </form>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">klick här</a>
+      <!-- <div class="questions">
+        <h2>Generela frågor</h2>
+        <p class="question">
+          När grundades det svenska Flygvapnet som en självständig försvarsgren?
+          
+        </p>
+        <p class="awnser">Det svenska Flygvapnet grundades som en självständig försvarsgren den
+          1 juli 1926.</p>
+           <p class="question">
+          När grundades det svenska Flygvapnet som en självständig försvarsgren?
+          
+        </p>
+        <p class="awnser">Det svenska Flygvapnet grundades som en självständig försvarsgren den
+          1 juli 1926.</p>
+      </div> -->
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">klicka här</a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <script>
+      MicroModal.init();
+    </script>
   </body>
 </html>
-<!-- JAS 39 Gripen
-JAS 39 Gripen är Sveriges nuvarande stridsflygplan och utvecklades av Saab för att ersätta tidigare modeller som Viggen och Draken. Det är ett multirole-flygplan, vilket betyder att det kan användas både för jakt, attack och spaning – därav namnet JAS. Gripen är känt för sin smidighet, avancerade teknik och låga driftkostnader. Det används inte bara av Sverige utan har även exporterats till flera andra länder, som Tjeckien, Ungern, Brasilien och Sydafrika.
+<!-- 
 
-Saab 35 Draken
-Saab 35 Draken var ett av världens mest avancerade jaktflygplan när det introducerades på 1950-talet. Det unika dubbeldelta-vingformatet gav det både höga hastigheter och god manövrerbarhet. Draken kunde flyga i över dubbla ljudhastigheten och användes i över 40 år av det svenska flygvapnet. Det exporterades även till länder som Finland, Danmark och Österrike. Planet var en viktig del av Sveriges kalla krig-försvar.
+
 
 Saab 32 Lansen
 Saab 32 Lansen introducerades på 1950-talet som ett attackflygplan och var Sveriges första jetdrivna flygplan som kunde operera i dåligt väder och på natten. Lansen användes för flera olika roller: attack, spaning och jakt. Det var kraftfullt beväpnat och hade lång räckvidd. Även om det idag är pensionerat, banade Lansen vägen för kommande generationers flygplan både tekniskt och taktiskt.
