@@ -5,6 +5,7 @@ body {
   display: flex;
   background-image: url(img/svenskskog.jpg);
   justify-content: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -27,10 +28,12 @@ body {
   border-color: black; */
   border-radius: 10px;
 }
+
 @media screen and (min-width: 0px) {
   .planes {
+
     .fortmation {
-      background-image: url(img/SvenskaStridsflygplan400x300.webp);
+      background-image: url(img/Flygvapnet364x400.webp);
     }
     .gripen {
       background-image: url(img/gripen400x300.webp);
@@ -92,7 +95,7 @@ body {
 @media screen and (min-width: 900px) {
   .planes {
     .fortmation {
-      background-image: url(img/SvenskaStridsflygplan600x400.webp);
+      background-image: url(img/Flygvapnet1164x400.webp);
     }
     .gripen {
       background-image: url(img/gripen600x400.webp);
@@ -121,16 +124,21 @@ body {
 }
 
 .top {
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
-  font-size: larger;
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  background-color:black;
- padding-right: 5px;
+  padding-right: 5px;
+  justify-content: space-between;
+    align-items: center;
+}
+.link{
+  text-decoration: none;
+  color: white;
 }
 .fortmation {
   color: white;
@@ -271,6 +279,24 @@ body {
   transform: translate(0, 0);
   transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
+.contact{
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact p:hover{
+box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+border-radius: 10px;
+padding: 3px;
+}
+
+
 /* .questions{
 color: rgb(0, 0, 0);
 background-color: white;

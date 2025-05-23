@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    background-image: url(img/svenskskog.jpg);
+    justify-content: center;
+
+}
+
+.container {
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+}
+.planes {
+    display: grid;
+    gap: 15px;
+}
+.planes div {
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+
+    /* border: solid;
+    border-color: black; */
+    border-radius: 10px;
+}
+/* .planes :hover{
+      /* Basic styling for the hamburger menu */
+      .hamburger-menu {
+        display: none; /* Hidden by default on larger screens */
+        font-size: 1.5em;
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+      }
+
+      .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px; /* Adjust based on your top bar height */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        z-index: 10;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .mobile-nav a {
+        display: block;
+        color: white;
+        padding: 10px 0;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      .mobile-nav a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      /* Show hamburger menu and hide regular links on smaller screens */
+      @media screen and (max-width: 768px) {
+        .hamburger-menu {
+          display: block;
+        }
+        .top > .link {
+          display: none;
+        }
+      }
+
+      /* Show mobile navigation when active */
+      .mobile-nav.active {
+        display: block;
+      }
+
+@media screen and (min-width: 0px) {
+    .planes {
+        .fortmation {
+            background-image: url(img/Flygvapnet364x400.webp);
+        }
+        .gripen {
+            background-image: url(img/gripen400x300.webp);
+        }
+        .draken {
+            background-image: url(img/draken400x300.webp);
+        }
+        .lansen {
+            background-image: url(img/lansen400x300.webp);
+        }
+        .tunnan {
+            background-image: url(img/tunnan2-400x300.webp);
+        }
+        .viggen {
+            background-image: url(img/viggen400x300.webp);
+        }
+
+        grid-template-areas:
+            " for "
+            " grip "
+            "drak"
+            " lan"
+            " tun"
+            "vig"
+            " vig";
+    }
+}
+@media screen and (min-width: 600px) {
+    .planes {
+        .fortmation {
+            background-image: url(img/SvenskaStridsflygplan600x400.webp);
+        }
+        .gripen {
+            background-image: url(img/gripen600x400.webp);
+            display: block;
+        }
+        .draken {
+            background-image: url(img/draken600x400.webp);
+        }
+        .lansen {
+            background-image: url(img/lansen600x400.webp);
+        }
+        .tunnan {
+            background-image: url(img/tunnan600x400.webp);
+        }
+        .viggen {
+            background-image: url(img/viggen600x400.webp);
+        }
+
+        grid-template-areas:
+            " for "
+            " grip "
+            "drak"
+            " lan"
+            " tun"
+            "vig ";
+    }
+}
+@media screen and (min-width: 900px) {
+    .planes {
+        .fortmation {
+            background-image: url(img/Flygvapnet1164x400.webp);
+        }
+        .gripen {
+            background-image: url(img/gripen600x400.webp);
+        }
+        .draken {
+            background-image: url(img/draken600x400.webp);
+        }
+        .lansen {
+            background-image: url(img/lansen600x400.webp);
+        }
+        .tunnan {
+            background-image: url(img/tunnan600x400.webp);
+        }
+        .viggen {
+            background-image: url(img/viggen600x400.webp);
+        }
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "for for"
+            " for for"
+            " grip drak"
+            " lan tun"
+            "vig vig";
+    }
+}
+
+.top {
+    margin: 0px 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 5px;
+    align-items: center; /* Vertically align items in the top bar */
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.fortmation {
+    color: white;
+    grid-area: for;
+    padding: 10px;
+}
+
+.gripen {
+    grid-area: grip;
+}
+.draken {
+    grid-area: drak;
+}
+.lansen {
+    grid-area: lan;
+}
+.tunnan {
+    grid-area: tun;
+}
+.viggen {
+    grid-area: vig;
+}
+/* Grundläggande styling för modalen */
+.modal {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Stannar på samma plats i fönstret */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Halvtransparent svart bakgrund */
+    display: none; /* Dölj modalen som standard */
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center; /* Centrera innehållet vertikalt */
+    z-index: 1000; /* Se till att den ligger ovanpå annat innehåll */
+}
+
+/* Visa modalen när den har klassen 'is-open' (läggs till av Micromodal) */
+.modal.is-open {
+    display: flex;
+}
+
+/* Styling för modalens innehållsruta */
+.modal__container {
+    /* display: flex;
+    justify-content: center; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(205, 208, 255, 0.63);
+    max-width: 500px;
+    width: 90%;
+    overflow: hidden; /* Klipp av innehåll som går utanför */
+}
+
+/* Styling för modalens header */
+.modal__header {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling för modalens titel */
+.modal__title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Styling för stäng-knappen i headern */
+.modal__close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal__close:hover {
+    opacity: 0.7;
+}
+
+/* Styling för modalens innehåll */
+.modal__content {
+    padding: 15px;
+}
+
+/* Styling för modalens footer */
+.modal__footer {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+}

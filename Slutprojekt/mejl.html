@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail.com</title>
+</head>
+<body>
+
+    <h1>mail.com</h1>
+    <p>Välkommen till mail.com! Här kan du skicka och ta emot e-post.</p>
+    <form action="send_email.php" method="post">
+        <label for="to">Till:</label><br>
+        <input type="email" id="to"name="to" required><br>
+        <label for="subject">Ämne:</label><br>
+        <input type="text" id="subject" name="subject" required><br>
+        <label for="message">Meddelande:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" value="Skicka">
+    </form>
+</body>
+</html>

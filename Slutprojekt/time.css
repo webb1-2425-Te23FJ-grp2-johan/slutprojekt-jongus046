@@ -1,12 +1,25 @@
 * {
   box-sizing: border-box;
+ 
 }
 body {
-  padding: 10px;
+border: solid;
 }
 .header {
   display: flex;
   justify-content: space-around;
+  text-decoration: none;
+  font-size: 15px;
+      align-items: center;
+    flex-direction: column;
+  
+}
+.text{
+  font-size: 10px;
+  max-width: 100%;
+padding: 5px;
+  background-color: white;
+  
 }
 .text1 {
   grid-area: text1;
@@ -23,26 +36,42 @@ body {
 .text5 {
   grid-area: text5;
 }
-.img1 {
-  grid-area: img1;
+img{
+  max-width: 100%;
 }
-.img2 {
-  grid-area: img2;
+.hangar {
+  grid-area: hang;
 }
-.img3 {
-  grid-area: img3;
+.saab {
+  grid-area: saab;
 }
-.img4 {
-  grid-area: img4;
+.kalla {
+  grid-area: kall;
+}
+.terri {
+  grid-area: terr;
+}
+.flyg{
+  grid-area: flyg;
 }
 .information {
     display: grid;
-    /*background-color: blueviolet;*/
-    grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "text1 img1"
-    "img2 text2"
-    "text3 img3"
-    "img4 text4"
-    "text5 text5";
+    display: flex;
+            justify-items: center;
+        align-items: center;
+}
+@media screen and (min-width:0px){
+  .information{
+    display: grid;
+    grid-template-areas:
+    "text1 saab"
+    "kall text2"
+    "text3 terr"
+    "flyg text4"
+    "hang hang"
+    ;
+    }
+
+    
+      
 }
