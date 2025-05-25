@@ -1,25 +1,22 @@
 * {
   box-sizing: border-box;
- 
 }
 body {
-border: solid;
+  border: solid;
 }
 .header {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
   font-size: 15px;
-      align-items: center;
-    flex-direction: column;
-  
+  align-items: center;
+  flex-direction: column;
 }
-.text{
+.text {
   font-size: 10px;
   max-width: 100%;
-padding: 5px;
+  padding: 5px;
   background-color: white;
-  
 }
 .text1 {
   grid-area: text1;
@@ -36,7 +33,7 @@ padding: 5px;
 .text5 {
   grid-area: text5;
 }
-img{
+img {
   max-width: 100%;
 }
 .hangar {
@@ -51,27 +48,25 @@ img{
 .terri {
   grid-area: terr;
 }
-.flyg{
+.flyg {
   grid-area: flyg;
 }
 .information {
-    display: grid;
-    display: flex;
-            justify-items: center;
-        align-items: center;
+  display: grid;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
-@media screen and (min-width:0px){
-  .information{
+@media screen and (min-width: 0px) {
+  .information {
     display: grid;
     grid-template-areas:
-    "text1 saab"
-    "kall text2"
-    "text3 terr"
-    "flyg text4"
-    "hang hang"
-    ;
-    }
-
-    
-      
+      "text1 saab"
+      "kall text2"
+      "text3 terr"
+      "flyg text4"
+      "hang hang";
+    background-size: cover;
+    background-position: center;
+  }
 }

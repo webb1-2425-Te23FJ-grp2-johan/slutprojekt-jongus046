@@ -5,8 +5,8 @@ body {
   display: flex;
   background-image: url(img/svenskskog.jpg);
   justify-content: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -24,14 +24,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   background-size: cover;
   background-position: center;
 
-  /* border: solid;
-  border-color: black; */
   border-radius: 10px;
 }
 
 @media screen and (min-width: 0px) {
   .planes {
-
     .fortmation {
       background-image: url(img/Flygvapnet364x400.webp);
     }
@@ -60,6 +57,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
       "vig"
       " vig";
   }
+  .top {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 8px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-right: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
 }
 @media screen and (min-width: 600px) {
   .planes {
@@ -91,6 +100,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
       " tun"
       "vig ";
   }
+  .top {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-right: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
 }
 @media screen and (min-width: 900px) {
   .planes {
@@ -115,16 +136,12 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "for for"
+      "for for"
       " for for"
       " grip drak"
       " lan tun"
       "vig vig";
-  }
-}
-
-.top {
-  /* margin: 0px 10px; */
+      .top {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
@@ -134,9 +151,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   text-decoration: none;
   padding-right: 5px;
   justify-content: space-between;
-    align-items: center;
+  align-items: center;
 }
-.link{
+  }
+}
+
+
+.link {
   text-decoration: none;
   color: white;
 }
@@ -161,40 +182,35 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .viggen {
   grid-area: vig;
 }
-/* Grundläggande styling för modalen */
+
 .modal {
   display: flex;
   justify-content: center;
-  position: fixed; /* Stannar på samma plats i fönstret */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Halvtransparent svart bakgrund */
-  display: none; /* Dölj modalen som standard */
-  justify-content: center; /* Centrera innehållet horisontellt */
-  align-items: center; /* Centrera innehållet vertikalt */
-  z-index: 1000; /* Se till att den ligger ovanpå annat innehåll */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-/* Visa modalen när den har klassen 'is-open' (läggs till av Micromodal) */
 .modal.is-open {
   display: flex;
 }
 
-/* Styling för modalens innehållsruta */
 .modal__container {
-  /* display: flex;
-  justify-content: center; */
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(205, 208, 255, 0.63);
   max-width: 500px;
   width: 90%;
-  overflow: hidden; /* Klipp av innehåll som går utanför */
+  overflow: hidden;
 }
 
-/* Styling för modalens header */
 .modal__header {
   padding: 15px;
   background-color: #f0f0f0;
@@ -204,13 +220,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   align-items: center;
 }
 
-/* Styling för modalens titel */
 .modal__title {
   margin: 0;
   font-size: 1.5em;
 }
 
-/* Styling för stäng-knappen i headern */
 .modal__close {
   background: none;
   border: none;
@@ -223,12 +237,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   opacity: 0.7;
 }
 
-/* Styling för modalens innehåll */
 .modal__content {
   padding: 15px;
 }
 
-/* Styling för modalens footer */
 .modal__footer {
   padding: 15px;
   background-color: #f0f0f0;
@@ -237,7 +249,6 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   justify-content: flex-end;
 }
 
-/* Styling för knappar i footern */
 .modal__btn {
   background-color: #2600ff;
   color: rgb(255, 255, 255);
@@ -252,7 +263,6 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   background-color: #0056b3;
 }
 
-/* Styling för den primära knappen */
 .modal__btn-primary {
   background-color: #28a745;
 }
@@ -261,14 +271,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   background-color: #1e7e34;
 }
 
-/* Anpassning för Micromodal-slide animation (om du använder den klassen) */
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
   opacity: 0;
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
   opacity: 1;
-  transition: opacity 0.3s cubic-bezier(0.0, 0.0, 0.2, 1) 0ms;
+  transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__container {
@@ -279,7 +288,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   transform: translate(0, 0);
   transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
 }
-.contact{
+.contact {
   color: rgb(0, 0, 0);
   background-color: white;
   padding: 10px;
@@ -290,51 +299,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   flex-direction: column;
   align-items: flex-start;
 }
-.contact p:hover{
-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-border-radius: 10px;
-padding: 3px;
+.contact p:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 
-/* .questions{
-color: rgb(0, 0, 0);
-background-color: white;
-padding-left: 5px;
-border-radius: 10px;
-margin-top: 5px;
-}
-.question{
-
-font-size: 20px;
-}
-.awnser{
-font-size: 15px;
-} */
-/* .planes {
-  display: flex;
-  flex-direction: column;
-
-    grid-auto-rows: 270px;
-    width: max-content;
-  display: grid;
-    padding: 150px;
-} */
-/* .fortmation{
-    background-image: url();
-  }
-  .gripen{
-    background-image: url();
-  }
-  .draken{
-    background-image: url();
-  }
-  .lansen{
-    background-image: url();
-  }
-  .tunnan{
-    background-image: url();
-  }
-  .viggen{
-    background-image: url();
-  } */
