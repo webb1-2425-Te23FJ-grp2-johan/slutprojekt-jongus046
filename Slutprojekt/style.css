@@ -23,7 +23,7 @@ body {
   min-height: 400px;
   background-size: cover;
   background-position: center;
-
+  
   border-radius: 10px;
 }
 
@@ -58,17 +58,17 @@ body {
       " vig";
   }
   .top {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 8px;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  padding-right: 5px;
-  justify-content: space-between;
-  align-items: center;
-}
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 600px) {
   .planes {
@@ -101,17 +101,17 @@ body {
       "vig ";
   }
   .top {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  padding-right: 5px;
-  justify-content: space-between;
-  align-items: center;
-}
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 900px) {
   .planes {
@@ -141,21 +141,20 @@ body {
       " grip drak"
       " lan tun"
       "vig vig";
-      .top {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  padding-right: 5px;
-  justify-content: space-between;
-  align-items: center;
-}
+    .top {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      color: white;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      padding-right: 5px;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
-
 
 .link {
   text-decoration: none;
@@ -305,5 +304,3 @@ body {
   border-radius: 10px;
   padding: 3px;
 }
-
-
